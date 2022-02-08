@@ -44,12 +44,20 @@ According to the plot, c52 had more VitC than c39. C52 was far off by a lot, it.
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
-
+```{r}
+favstats(VitC~Cult,data=veggy)
+```
+According to the data, c52 had a higher mean than c39. c52 had a mean of 64.4 whereas c39 had a mean of 51.5. Therefore c52 had a higher amount of VitC by roughy 12.9 of a difference.
+   
 ## Inferential Results
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
-
-
+After looking at the boxplot and then importing the data, it was evident that c52 had more VitC than c39. To make sure of the drastic difference, by checking the mean between the two values, c52 had the highest mean. c52 had a mean of 64.4 and. c39 had a mean of 51.5. My hypothesis from looking at the data is that c52 is the one that results the highest.
+  
+```{r}
+t.test(VitC~Cult,data=veggy)
+```
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+After running the T test, the T test helped confirm the results that rejected the hypothsis that they are the same. The T test gives us the final results which shows that c52 did recieve more VitC. The value of T was a very small number which tells us that they are different.  
