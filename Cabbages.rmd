@@ -37,6 +37,10 @@ veggy <- cabbages
 ```{r}
 boxplot(VitC~Cult,data=veggy)
 ```
+  
+According to the plot, c52 had more VitC than c39. C52 was far off by a lot, it. was in the 50th percentile whereas, c39 was in the 75th percentile. There was a drastic difference between the two according to which had more Vitc. 
+ 
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
